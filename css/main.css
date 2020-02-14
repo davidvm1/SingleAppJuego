@@ -1,0 +1,97 @@
+body{
+    margin:0
+}
+
+
+a{
+    color: black;
+}
+
+
+.splash{
+    background: red;
+    height: 720px;
+    width: 360px;
+    text-align: center;
+    margin:0
+}
+
+.inicio{
+    background: rgb(25, 0, 255);
+    height: 720px;
+    width: 360px;
+    text-align: center;
+    margin:0
+}
+
+.play{
+    background: rgb(133, 185, 9);
+    height: 720px;
+    width: 360px;
+    margin:0
+}
+
+.indicadoresPlay{
+    display: inline-block;
+    margin:15px;
+}
+
+#juego{
+    background: black;
+    height: 270px;
+    width: 270px;
+    margin:50px;
+}
+
+#logo1{
+    width: 100px;
+    height: 100px;
+    margin-top:10px;
+    margin-left:10px;
+    
+}
+
+.instrucciones{
+    background: rgb(236, 221, 4);
+    height: 720px;
+    width: 360px;
+    margin:0
+}
+
+#logo2{
+    width: 100px;
+    height: 100px;
+    margin-top:10px;
+    margin-left:10px;
+    
+}
+
+.btnInstr{
+    display: inline-block;
+    margin:15px;
+}
+
+#pInstrucciones{
+    height: 270px;
+    width: 270px;
+    margin:25px;
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.creditos{
+    background: rgb(243, 5, 223);
+    height: 720px;
+    width: 360px;
+    text-align: center;
+    margin:0
+}
+
+.puntajes{
+    background: rgb(0, 225, 255);
+    height: 720px;
+    width: 360px;
+    text-align: center;
+    margin:0
+}
