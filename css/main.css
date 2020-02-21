@@ -7,11 +7,14 @@ a{
     color: black;
 }
 
+.oculto{
+    display:none
+}
+
 
 .splash{
-    background: red;
     height: 720px;
-    width: 360px;
+    width: 340px;
     text-align: center;
     margin:0
 }
@@ -19,7 +22,7 @@ a{
 .inicio{
     background: rgb(25, 0, 255);
     height: 720px;
-    width: 360px;
+    width: 340px;
     text-align: center;
     margin:0
 }
@@ -27,7 +30,7 @@ a{
 .play{
     background: rgb(133, 185, 9);
     height: 720px;
-    width: 360px;
+    width: 340px;
     margin:0
 }
 
@@ -54,7 +57,7 @@ a{
 .instrucciones{
     background: rgb(236, 221, 4);
     height: 720px;
-    width: 360px;
+    width: 340px;
     margin:0
 }
 
@@ -83,7 +86,7 @@ a{
 .creditos{
     background: rgb(243, 5, 223);
     height: 720px;
-    width: 360px;
+    width: 340px;
     text-align: center;
     margin:0
 }
@@ -91,7 +94,7 @@ a{
 .puntajes{
     background: rgb(0, 225, 255);
     height: 720px;
-    width: 360px;
+    width: 340px;
     text-align: center;
     margin:0
 }

@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Puzzle</title>
 
+
+    <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+
 </head>
 <body>
     <!--Splash-->
     <section id= "seccion_1" class="splash">
 
-        <br>
-        <h1>Splash</h1>
-        <img src="img/puzzle-icon.png"></img>
+        <!--<h1>Splash</h1>-->
+        <img src="img/splash.gif">
+        
 
     </section>
 
     <!--Pantalla Inicio-->
-    <section id= "seccion_2" class="inicio">
+    <section id= "seccion_2" class="inicio oculto">
         <br>
         <h1>Puzzle</h1>
         <img src="img/puzzle-icon.png"></img>
         <br>
         <br>
-        <a href="#creditos">Creditos</a>
-        <a href="#play">Jugar</a>
-        <a href="#puntajes">Puntajes</a>
+        <a href="javascript:void();" onClick="cambiarSeccion(5);">Creditos</a>
+        <a href="javascript:void();" onClick="cambiarSeccion(3);">Jugar</a>
+        <a href="javascript:void();" onClick="cambiarSeccion(6);">Puntajes</a>
         <br>
         <div style="margin-top: 30%">
-            <a href="#instrucciones">Instrucciones</a>
+            <a href="javascript:void();" onClick="cambiarSeccion(4);">Instrucciones</a>
         </div>
     </section>
 
     <!--Pantalla de juego-->
-    <section id= "seccion_3" class="play">
+    <section id= "seccion_3" class="play oculto">
         <br>
         <div>
             <img id="logo1" src="img/puzzle-icon.png"></img>
@@ -47,12 +51,12 @@
     </section>
 
     <!--Instrucciones-->
-    <section id= "seccion_4" class="instrucciones">
+    <section id= "seccion_4" class="instrucciones oculto">
         <br>
         <div>
             <img id="logo2" src="img/puzzle-icon.png"></img>
-            <a href="#play" class="btnInstr">Jugar</a>
-            <a href="#inicio" class="btnInstr">Inicio</a>
+            <a href="javascript:void();" onClick="cambiarSeccion(3);">Jugar</a>
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">Inicio</a>
         </div>
         <p id="pInstrucciones">
             Lorem ipsum dolor sit amet consectetur 
@@ -69,7 +73,9 @@
         </p>
     </section>
 
-    <section id= "seccion_5" class="creditos">
+
+    <!--Creditos-->
+    <section id= "seccion_5" class="creditos oculto">
         <br>
         <img src="img/puzzle-icon.png"></img>
         <h2>Creditos</h2>
@@ -78,11 +84,12 @@
             <br>
             <span>Desarrollador: David Vieira</span>
             <br>
-            <a href="#inicio">Volver</a> 
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">Volver</a> 
         </div>
     </section>
 
-    <section id= "seccion_6" class="puntajes">
+    <!--Puntajes-->
+    <section id= "seccion_6" class="puntajes oculto">
         <br>
         <h2>Puntajes</h2>
         <div>
@@ -92,8 +99,11 @@
             <br>
             <span>3. 3000 pts</span>
             <br>
-            <a href="#inicio">Volver</a> 
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">Volver</a> 
         </div>
     </section>
 </body>
+
+<script type="text/javascript" src="js/main.js"></script>
+
 </html>
