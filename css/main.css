@@ -27,6 +27,11 @@ a{
     margin:0
 }
 
+#separacion{
+    height: 200px;
+    width: 200px;
+}
+
 .play{
     background: rgb(133, 185, 9);
     height: 720px;
@@ -43,15 +48,24 @@ a{
     background: black;
     height: 270px;
     width: 270px;
-    margin:50px;
+    margin-left: 35px;
+    margin-top: 50px;
 }
 
 #logo1{
-    width: 100px;
-    height: 100px;
+
     margin-top:10px;
-    margin-left:10px;
+    margin-left:20px;
     
+}
+
+#menubtn1{
+    margin-top:20px;
+    margin-left:70px;
+}
+#pausabtn1{
+    margin-top:20px;
+    margin-left: 145px;
 }
 
 .instrucciones{
