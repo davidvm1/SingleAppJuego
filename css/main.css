@@ -19,6 +19,13 @@ a{
     margin:0
 }
 
+.transicion{
+    height: 720px;
+    width: 340px;
+    text-align: center;
+    margin:0
+}
+
 .inicio{
     background: rgb(25, 0, 255);
     height: 720px;
@@ -27,8 +34,13 @@ a{
     margin:0
 }
 
+#tituloini{
+    margin-top: 250px;
+}
+
+
 #separacion{
-    height: 200px;
+    height: 20px;
     width: 200px;
 }
 
@@ -72,29 +84,13 @@ a{
     background: rgb(236, 221, 4);
     height: 720px;
     width: 340px;
-    margin:0
-}
-
-#logo2{
-    width: 100px;
-    height: 100px;
-    margin-top:10px;
-    margin-left:10px;
-    
-}
-
-.btnInstr{
-    display: inline-block;
-    margin:15px;
-}
-
-#pInstrucciones{
-    height: 270px;
-    width: 270px;
-    margin:25px;
-    margin-left: 50px;
     text-align: center;
-    border: 1px solid black;
+    margin:0;
+    font-family: 'Raleway';
+}
+
+.instrucciones p{
+    margin: 0%;
 }
 
 .creditos{
@@ -102,13 +98,13 @@ a{
     height: 720px;
     width: 340px;
     text-align: center;
-    margin:0
+    margin:0;
+    font-family: 'Raleway';
+}
+.creditos h2{
+    font-family: 'Raleway';
 }
 
-.puntajes{
-    background: rgb(0, 225, 255);
-    height: 720px;
-    width: 340px;
-    text-align: center;
-    margin:0
+#creditosttl{
+    margin-top: 60px;
 }

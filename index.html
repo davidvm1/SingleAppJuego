@@ -9,34 +9,35 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:black,regular&display=swap" >
 
 </head>
 <body>
     <!--Splash-->
     <section id= "seccion_1" class="splash">
-
         <!--<h1>Splash</h1>-->
         <img src="img/splash.gif">
-        
-
     </section>
 
     <!--Pantalla Inicio-->
     <section id= "seccion_2" class="inicio oculto">
         <br>
-        <img src="img/logofinal.png"></img>
+        <img id="tituloini" src="img/logofinal.png"></img>
         <div id='separacion'></div>
 
-        <a href="javascript:void();" onClick="cambiarSeccion(5);">
-            <img src="img/creditosbtn.png"></img>
-        </a>
+        <div>
+            <a href="javascript:void();" onClick="cambiarSeccion(3);">
+                <img src="img/playbtn.png"></img>
+            </a>
+        </div>
 
-        <a href="javascript:void();" onClick="cambiarSeccion(3);">Jugar</a>
-        <a href="javascript:void();" onClick="cambiarSeccion(6);">Puntajes</a>
-        <br>
+        <div>
+            <a href="javascript:void();" onClick="cambiarSeccion(5);">
+                <img src="img/creditosbtn.png"></img>
+            </a>
+        </div>
 
-
-        <div style="margin-top: 30%">
+        <div>
             <a href="javascript:void();" onClick="cambiarSeccion(4);">
                 <img src="img/instruccionesbtn.png"></img>
             </a>
@@ -66,52 +67,50 @@
     <!--Instrucciones-->
     <section id= "seccion_4" class="instrucciones oculto">
         <br>
+        <img src="img/logobwinst.png"></img>
+        <br> 
+        <br>
+        <img src="img/cuadricula.png"></img>
+        <p>Une los cuadros con<br>la misma textura</p>
+        <img src="img/cuadricula.png"></img>
+        <p>Consigue la textura<br>más oscura</p>
         <div>
-            <img id="logo2" src="img/puzzle-icon.png"></img>
-            <a href="javascript:void();" onClick="cambiarSeccion(3);">Jugar</a>
-            <a href="javascript:void();" onClick="cambiarSeccion(2);">Inicio</a>
+            <a href="javascript:void();" onClick="cambiarSeccion(3);">
+                <img src="img/jugarbtn.png"></img>
+            </a>
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">
+                <img src="img/volverbtninst.png"></img>
+            </a>
         </div>
-        <p id="pInstrucciones">
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Voluptas eligendi cum
-            amet officia non, commodi laudantium ipsam
-            magni dicta quis voluptatibus reprehenderit
-            harum, rem expedita, quisquam cumque repudiandae 
-            porro tempore!
-            Lorem ipsum, dolor sit amet consectetur 
-            adipisicing elit. Modi voluptatibus, a animi 
-            porro reprehenderit in repellendus atque debitis 
-            ut perferendis. Voluptatum maxime similique nobis
-            nisi expedita, sunt deserunt. Ut, maiores?
-        </p>
     </section>
 
 
     <!--Creditos-->
     <section id= "seccion_5" class="creditos oculto">
         <br>
-        <img src="img/creditos.png"></img>
+        <img id="creditosttl" src="img/creditos.png"></img>
         <div>
-            <span>Diseñadora: Camila Velasquez</span>
-            <br>
-            <span>Desarrollador: David Vieira</span>
-            <br>
-            <a href="javascript:void();" onClick="cambiarSeccion(2);">Volver</a> 
-        </div>
-    </section>
+            <h2>Gracias</h2>
+            <h3>Familias</h3>
+            <p>Por creer en nosotros</p>
 
-    <!--Puntajes-->
-    <section id= "seccion_6" class="puntajes oculto">
-        <br>
-        <h2>Puntajes</h2>
-        <div>
-            <span>1. 3000 pts</span>
-            <br>
-            <span>2. 2000 pts</span>
-            <br>
-            <span>3. 3000 pts</span>
-            <br>
-            <a href="javascript:void();" onClick="cambiarSeccion(2);">Volver</a> 
+            <h3>Profesores</h3>
+            <p>Por creer en nosotros</p>
+
+            <h3>Adobe</h3>
+            <p>Por crear CD y permitir su uso gratuito,
+                sin esta herramienta no hubiera sido posible
+                nada de esto.
+            </p>
+
+            <h3>Diseño</h3>
+            <p>Camila Velasquez</p>
+
+            <h3>Desarrollo</h3>
+            <p>David Vieira</p>
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">
+                <img src="img/volverbtn.png"></img>
+            </a> 
         </div>
     </section>
 </body>
