@@ -22,6 +22,11 @@
     <!--Pantalla Inicio-->
     <section id= "seccion_2" class="inicio oculto">
         <br>
+        <div id="cabezeraini">
+            <a id = "herbariobtn" href="javascript:void();" onClick="cambiarSeccion(6);">
+                <img src="img/herbariobtn.png"></img>
+            </a>
+        </div>
         <img id="tituloini" src="img/logofinal.png"></img>
         <div id='separacion'></div>
 
@@ -30,16 +35,16 @@
                 <img src="img/playbtn.png"></img>
             </a>
         </div>
-
+        <br>
         <div>
             <a href="javascript:void();" onClick="cambiarSeccion(5);">
-                <img src="img/creditosbtn.png"></img>
+                <img  src="img/creditosbtn.png"></img>
             </a>
         </div>
 
         <div>
             <a href="javascript:void();" onClick="cambiarSeccion(4);">
-                <img src="img/instruccionesbtn.png"></img>
+                <img  src="img/instruccionesbtn.png"></img>
             </a>
         </div>
     </section>
@@ -47,72 +52,114 @@
     <!--Pantalla de juego-->
     <section id= "seccion_3" class="play oculto">
         <br>
-        <img id="logo1" src="img/logofinal.png"></img>
+        <img id="logo1" src="img/logobwinst.png"></img>
         <br>
-        <a href="javascript:void();" onClick="cambiarSeccion(2);">
-            <img  id ='menubtn1' src="img/menubtn.png"></img>
-        </a>
         <div>
-            <h3 class="indicadoresPlay">Puntaje</h2>
-            <h3 class="indicadoresPlay">Record</h2>
-        </div>
+            <div id="puntaje1" class="puntaje">
+                <h4>Puntos</h4>
+            </div>
+            <div class="puntaje">
+                <h4>Record</h4>
+            </div>
+        </div>       
+        
         <div id="juego">
             Juego
         </div>
-        <a href="javascript:void();" onClick="cambiarSeccion(2);">
-            <img  id ='pausabtn1' src="img/pausabtn.png"></img>
-        </a>
+        <div id="menubtncontainer">
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">
+                <img  id ='menubtn1' src="img/menubtn.png"></img>
+            </a>
+        </div>
+        
     </section>
 
     <!--Instrucciones-->
     <section id= "seccion_4" class="instrucciones oculto">
-        <br>
-        <img src="img/logobwinst.png"></img>
-        <br> 
-        <br>
-        <img src="img/cuadricula.png"></img>
-        <p>Une los cuadros con<br>la misma textura</p>
-        <img src="img/cuadricula.png"></img>
-        <p>Consigue la textura<br>más oscura</p>
-        <div>
-            <a href="javascript:void();" onClick="cambiarSeccion(3);">
-                <img src="img/jugarbtn.png"></img>
-            </a>
-            <a href="javascript:void();" onClick="cambiarSeccion(2);">
-                <img src="img/volverbtninst.png"></img>
-            </a>
-        </div>
+
+        <a href="javascript:void();" onClick="cambiarSeccion(3);">
+            <img id='jugarbtn' src="img/playbtn.png"></img>
+        </a>
+        
     </section>
 
 
     <!--Creditos-->
     <section id= "seccion_5" class="creditos oculto">
-        <br>
-        <img id="creditosttl" src="img/creditos.png"></img>
-        <div>
-            <h2>Gracias</h2>
-            <h3>Familias</h3>
-            <p>Por creer en nosotros</p>
-
-            <h3>Profesores</h3>
-            <p>Por creer en nosotros</p>
-
-            <h3>Adobe</h3>
-            <p>Por crear CD y permitir su uso gratuito,
-                sin esta herramienta no hubiera sido posible
-                nada de esto.
-            </p>
-
-            <h3>Diseño</h3>
-            <p>Camila Velasquez</p>
-
-            <h3>Desarrollo</h3>
-            <p>David Vieira</p>
-            <a href="javascript:void();" onClick="cambiarSeccion(2);">
-                <img src="img/volverbtn.png"></img>
-            </a> 
-        </div>
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='volverbtn' src="img/volverbtn.png"></img>
+        </a> 
     </section>
+
+    <!--Herbario-->
+    <section id= "seccion_6" class="herbario oculto">
+        <div class="containerbtnherb">
+            <a href="javascript:void();" onClick="cambiarSeccion(2);">
+                <img id='menubtnherb' src="img/menubtn.png"></img>
+            </a>
+            <a href="javascript:void();" onClick="cambiarSeccion(7);">
+                <img id='derechabtn' src="img/derechabtn.png"></img>
+            </a>
+        </div>      
+    </section>
+
+    <!--Plantas del herbario-->
+    <section id= "seccion_7" class="planta1 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+        
+    </section>
+
+    <section id= "seccion_8" class="planta2 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_9" class="planta3 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_10" class="planta4 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_11" class="planta5 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_12" class="planta6 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_13" class="planta7 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_14" class="planta8 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+    <section id= "seccion_15" class="planta9 oculto">
+        <a href="javascript:void();" onClick="cambiarSeccion(2);">
+            <img id='menubtnherb' src="img/menubtn.png"></img>
+        </a> 
+    </section>
+
+
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>

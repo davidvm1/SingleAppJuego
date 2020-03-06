@@ -27,15 +27,26 @@ a{
 }
 
 .inicio{
-    background: rgb(25, 0, 255);
+    background: url('C:/Users/david/Desktop/Universidad/Semestre 7/Aplicaciones moviles/juego/img/fondoinicio.png');
     height: 720px;
     width: 340px;
     text-align: center;
     margin:0
 }
 
+#cabezeraini{
+    position: relative;
+    width: inherit;
+
+}
+
+#herbariobtn{
+    position: absolute;
+    right: 20px;
+}
+
 #tituloini{
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 
@@ -45,7 +56,7 @@ a{
 }
 
 .play{
-    background: rgb(133, 185, 9);
+    background:url('C:/Users/david/Desktop/Universidad/Semestre 7/Aplicaciones moviles/juego/img/fondojuego.png');
     height: 720px;
     width: 340px;
     margin:0
@@ -67,21 +78,39 @@ a{
 #logo1{
 
     margin-top:10px;
-    margin-left:20px;
+    margin-left:100px;
     
+}
+#puntaje1{
+    margin-left: 30px;
+}
+
+.puntaje{
+    display: inline-block;
+    background: url('C:/Users/david/Desktop/Universidad/Semestre 7/Aplicaciones moviles/juego/img/Puntaje.png');
+    width: 134px;
+    height: 82px;
+    text-align: center;
+}
+
+.puntaje h4{
+    font-family: 'Raleway';
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#menubtncontainer{
+    width: inherit;
+    text-align: center;
 }
 
 #menubtn1{
     margin-top:20px;
-    margin-left:70px;
-}
-#pausabtn1{
-    margin-top:20px;
-    margin-left: 145px;
+    /*margin-left:100px;*/
 }
 
 .instrucciones{
-    background: rgb(236, 221, 4);
+    background: url('C:/Users/david/Desktop/Universidad/Semestre 7/Aplicaciones moviles/juego/img/fondoinstrucciones.png');
     height: 720px;
     width: 340px;
     text-align: center;
@@ -93,18 +122,33 @@ a{
     margin: 0%;
 }
 
+#jugarbtn{
+    margin-top: 600px;
+}
+
 .creditos{
-    background: rgb(243, 5, 223);
+    background: url('C:/Users/david/Desktop/Universidad/Semestre 7/Aplicaciones moviles/juego/img/fondocreditos.png');
     height: 720px;
     width: 340px;
     text-align: center;
     margin:0;
     font-family: 'Raleway';
 }
-.creditos h2{
+
+#volverbtn{
+    margin-top: 600px;
+}
+
+.herbario{
+    background: red;
+    height: 720px;
+    width: 340px;
+    text-align: center;
+    margin:0;
     font-family: 'Raleway';
 }
 
-#creditosttl{
-    margin-top: 60px;
+.containerbtnherb{
+    width: inherit;
 }
+
