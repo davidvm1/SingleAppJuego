@@ -1,11 +1,13 @@
 
 var secciones = [];
 var tiempo_splash = 5000;
+var tiempo_juguemos = 1000;
 
 window.onload = function(){
     inicializarReferencias();
     setTimeout(cambiarSplash, tiempo_splash);
 }
+
 function inicializarReferencias(){
     secciones[1] = document.getElementById("seccion_1");
     secciones[2] = document.getElementById("seccion_2");
@@ -22,6 +24,8 @@ function inicializarReferencias(){
     secciones[13] = document.getElementById("seccion_13");
     secciones[14] = document.getElementById("seccion_14");
     secciones[15] = document.getElementById("seccion_15");
+    secciones[16] = document.getElementById("seccion_16");
+    secciones[17] = document.getElementById("seccion_17");
 }
 
 function cambiarSplash(){
@@ -33,8 +37,23 @@ function cambiarSeccion(id_seccion){
     for (var i in secciones){
         secciones[i].classList.add("oculto");  
     }
+    
 
-    secciones[id_seccion].classList.add("animated");
-    secciones[id_seccion].classList.add("headShake");
-    secciones[id_seccion].classList.remove("oculto");
+    if (id_seccion == 7){
+        secciones[id_seccion].classList.add("animated");
+        secciones[id_seccion].classList.add("fadeOut");
+        secciones[id_seccion].classList.remove("oculto");
+        setTimeout(() => {
+            secciones[7].className = "juguemos oculto";
+            secciones[3].className = "play animated fadeIn";
+        }, tiempo_juguemos);
+    }
+    else{
+        secciones[id_seccion].classList.add("animated");
+        secciones[id_seccion].classList.add("fadeIn");
+        secciones[id_seccion].classList.remove("oculto");
+    }
+    
 }
+
+
