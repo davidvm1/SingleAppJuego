@@ -4,6 +4,9 @@ var ctx = canvas.getContext("2d");
 var puntaje = document.getElementById("puntos");
 var max_puntaje = document.getElementById("maxpuntos");
 
+var puntaje_perder = document.getElementById("puntaje_perder");
+var puntaje_max_perder = document.getElementById("puntaje_max_perder");
+
 var puntos = 0;
 var tamaño = 3;
 var ancho = canvas.width / tamaño - 7;
@@ -15,14 +18,27 @@ var perder = false;
 var imagenes = [];
 var patron;
 
+var localStorageName = "puntaje_max"
+var maximos_puntos;
+
+
 comenzarJuego();
 
 function comenzarJuego() {
+    puntos = 0
+    puntaje.innerHTML = puntos;
+    canvas.style.opacity = "100";
+    inicializarPuntajeMaximo();    
     inicializarImagenes();
     crearCeldas();
     dibujarCeldas();
     pegarCelda();
     pegarCelda();
+}
+
+function inicializarPuntajeMaximo(){
+    maximos_puntos = localStorage.getItem(localStorageName) == null ? 0 : localStorage.getItem(localStorageName);
+    max_puntaje.innerHTML = maximos_puntos; 
 }
 
 function inicializarImagenes() {
@@ -287,4 +303,14 @@ function moverIzq() {
 function terminarJuego() {
     canvas.style.opacity = "0.5";
     loss = true
+    
+    maximos_puntos = Math.max(puntos, maximos_puntos);
+    localStorage.setItem(localStorageName, maximos_puntos);
+
+    puntaje_perder.innerHTML = puntos;
+    puntaje_max_perder.innerHTML = maximos_puntos;
+
+    cambiarSeccion(18);
+    comenzarJuego();
+
 }

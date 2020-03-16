@@ -34,6 +34,7 @@ function inicializarReferencias(){
     secciones[15] = document.getElementById("seccion_15");
     secciones[16] = document.getElementById("seccion_16");
     secciones[17] = document.getElementById("seccion_17");
+    secciones[18] = document.getElementById("seccion_18")
 }
 
 function cambiarSplash(){

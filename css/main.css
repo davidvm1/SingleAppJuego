@@ -281,3 +281,24 @@ a{
     font-family: 'Raleway';
 }
 
+.perder{
+    background: url(../img/perder.png);
+    height: 720px;
+    width: 360px;
+    text-align: center;
+    margin:0;
+    font-family: 'Raleway';
+}
+
+#puntos_perder_cont{
+    height: 200px;
+    width: inherit;
+    text-align: center;
+    padding-top: 320px;
+}
+
+.puntajes_perder{
+    font-family: 'Raleway';
+    padding: 10px;
+}
+
