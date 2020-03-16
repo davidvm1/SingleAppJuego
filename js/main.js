@@ -3,10 +3,18 @@ var secciones = [];
 var tiempo_splash = 5000;
 var tiempo_juguemos = 1000;
 
-window.onload = function(){
+window.onload = init;
+
+function init() {
     inicializarReferencias();
     setTimeout(cambiarSplash, tiempo_splash);
+/*
+    stage = new createjs.Stage("juego");
+    dibujarCeldas();
+    stage.update();*/
 }
+
+
 
 function inicializarReferencias(){
     secciones[1] = document.getElementById("seccion_1");
@@ -55,5 +63,6 @@ function cambiarSeccion(id_seccion){
     }
     
 }
+
 
 

@@ -51,7 +51,6 @@
 
     <!--Pantalla de juego - Juguemos-->
     <section id= "seccion_7" class="juguemos oculto">
-        <!--<h1>Splash</h1>-->
         <img src="img/juguemos.png">
     </section>
 
@@ -59,19 +58,45 @@
     <section id= "seccion_3" class="play oculto">
         <br>
         <img id="logo1" src="img/logobwinst.png"></img>
+        <!--imagenes cuadros invisibles-->
+        <img class="cuadros" id="cuadro_1" src="img/cuadro_1.png"></img>
+        <img class="cuadros" id="cuadro_2" src="img/cuadro_2.png"></img>
+        <img class="cuadros" id="cuadro_3" src="img/cuadro_3.png"></img>
+        <img class="cuadros" id="cuadro_4" src="img/cuadro_4.png"></img>
+        <img class="cuadros" id="cuadro_5" src="img/cuadro_5.png"></img>
+        <img class="cuadros" id="cuadro_6" src="img/cuadro_6.png"></img>
+        <img class="cuadros" id="cuadro_7" src="img/cuadro_7.png"></img>
+        <img class="cuadros" id="cuadro_8" src="img/cuadro_8.png"></img>
+        <img class="cuadros" id="cuadro_9" src="img/cuadro_9.png"></img>
+        <img class="cuadros" id="cuadro_10" src="img/cuadro_10.png"></img>
         <br>
-        <div>
-            <div id="puntaje1" class="puntaje">
+        <div id=puntajecont>
+            <div class="puntaje">
                 <h4>Puntos</h4>
+                <span id="puntos"></span>
             </div>
             <div class="puntaje">
                 <h4>Record</h4>
+                <span id="maxpuntos"></span>
             </div>
-        </div>       
+        </div>  
         
-        <div id="juego">
-            Juego
+        <!--<div id="contenedorcanvas">
+            <div id="juego">
+                
+            </div>
+        </div>-->
+        
+
+        <div id="contenedor">
+            <div id="arriba" onClick="moverArriba();"></div>
+            <div class="bloque" id="izquierdo" onClick="moverIzq();"></div>
+            <canvas class="bloque" id="juego" height="300px" width="300px">
+            </canvas>
+            <div class="bloque" id="derecho" onClick="moverDer();"></div>
+            <div id="abajo" onClick="moverAbajo();"></div>      
         </div>
+        
         <div id="menubtncontainer">
             <a href="javascript:void();" onClick="cambiarSeccion(2);">
                 <img  id ='menubtn1' src="img/menubtn.png"></img>
@@ -256,5 +281,6 @@
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/juego.js"></script>
 
 </html>

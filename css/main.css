@@ -62,27 +62,19 @@ a{
     margin:0
 }
 
-.indicadoresPlay{
-    display: inline-block;
-    margin:15px;
-}
-
-#juego{
-    background: black;
-    height: 270px;
-    width: 270px;
-    margin-left: 35px;
-    margin-top: 50px;
-}
-
 #logo1{
 
     margin-top:10px;
     margin-left:100px;
     
 }
-#puntaje1{
-    margin-left: 30px;
+
+.cuadros{
+    display: none;
+}
+
+#puntajecont{
+    text-align: center;
 }
 
 .puntaje{
@@ -97,6 +89,45 @@ a{
     font-family: 'Raleway';
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.puntaje span{
+    font-family: 'Raleway';
+}
+
+
+#juego{
+    background: white;
+    border: 1px solid black;
+}
+
+.bloque{
+    display: inline-block;
+}
+
+
+#arriba{
+    width: inherit;
+    height: 50px;
+
+}
+
+
+
+#abajo{
+    width: 300px;
+    height: 50px;
+    width: inherit;
+}
+
+#izquierdo{
+    width: 20px;
+    height: 300px;
+}
+
+#derecho{
+    width: 20px;
+    height: 300px;
 }
 
 #menubtncontainer{
